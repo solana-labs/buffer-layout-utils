@@ -12,7 +12,7 @@ export const bigInt =
 
         bigIntLayout.decode = (buffer: Buffer, offset: number) => {
             const src = decode(buffer, offset);
-            return toBigIntLE(src as Buffer);
+            return toBigIntLE(Buffer.from(src));
         };
 
         bigIntLayout.encode = (bigInt: bigint, buffer: Buffer, offset: number) => {
@@ -33,7 +33,7 @@ export const bigIntBE =
 
         bigIntLayout.decode = (buffer: Buffer, offset: number) => {
             const src = decode(buffer, offset);
-            return toBigIntBE(src as Buffer);
+            return toBigIntBE(Buffer.from(src));
         };
 
         bigIntLayout.encode = (bigInt: bigint, buffer: Buffer, offset: number) => {
