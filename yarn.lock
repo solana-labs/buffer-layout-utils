@@ -432,9 +432,15 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@solana/buffer-layout@^3.0.0", "@solana/buffer-layout@https://github.com/jordansexton/buffer-layout#ae9ef3b271548e50670911db65c3f965d42797e6":
+"@solana/buffer-layout@^3.0.0":
   version "3.0.0"
   resolved "https://github.com/jordansexton/buffer-layout#ae9ef3b271548e50670911db65c3f965d42797e6"
+  dependencies:
+    buffer "~6.0.3"
+
+"@solana/buffer-layout@https://github.com/jordansexton/buffer-layout#generics":
+  version "3.0.0"
+  resolved "https://github.com/jordansexton/buffer-layout#ec0095e58f14e58ca34052d7249a605cb7467e1d"
   dependencies:
     buffer "~6.0.3"
 
