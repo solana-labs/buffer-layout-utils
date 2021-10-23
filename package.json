@@ -11,6 +11,9 @@
     "publishConfig": {
         "access": "public"
     },
+    "files": [
+        "lib/"
+    ],
     "type": "module",
     "sideEffects": false,
     "main": "lib/index.js",
@@ -25,7 +28,8 @@
         "fmt": "prettier --write '{*,**/*}.{js,ts,jsx,tsx,json}'",
         "lint": "eslint --ext .ts . && prettier --check '{*,**/*}.{js,ts,jsx,tsx,json}'",
         "lint:fix": "eslint --fix --ext .ts . && yarn fmt",
-        "nuke": "shx rm -rf node_modules yarn.lock"
+        "nuke": "shx rm -rf node_modules yarn.lock",
+        "prepare": "yarn build"
     },
     "peerDependencies": {
         "@solana/buffer-layout": "https://github.com/jordansexton/buffer-layout#generics"
