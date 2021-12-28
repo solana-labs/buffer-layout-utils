@@ -11,7 +11,10 @@
         "access": "public"
     },
     "files": [
-        "lib/"
+        "lib",
+        "src",
+        "LICENSE",
+        "README.md"
     ],
     "type": "module",
     "sideEffects": false,
