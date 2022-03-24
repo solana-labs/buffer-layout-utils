@@ -1,3 +1,4 @@
+import { Buffer } from 'buffer';
 import { blob, Layout } from '@solana/buffer-layout';
 import { toBigIntBE, toBigIntLE, toBufferBE, toBufferLE } from 'bigint-buffer';
 import { encodeDecode } from './base';
