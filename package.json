@@ -23,7 +23,8 @@
     "types": "lib/types/index.d.ts",
     "exports": {
         "import": "./lib/esm/index.mjs",
-        "require": "./lib/cjs/index.js"
+        "require": "./lib/cjs/index.js",
+        "types": "./lib/types/index.d.ts"
     },
     "scripts": {
         "clean": "shx rm -rf lib",
